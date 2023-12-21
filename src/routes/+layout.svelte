@@ -8,7 +8,7 @@
 	</main>
 
 	<footer>
-		<p>Build by KilloconQ</p>
+		<p>Build by <a href="https://github.com/KilloconQ/">KilloconQ</a></p>
 	</footer>
 </div>
 
