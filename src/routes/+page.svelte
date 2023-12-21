@@ -1,5 +1,5 @@
 <script>
-	import Counter from './Counter.svelte';
+	import Pomodoro from './Pomodoro.svelte';
 </script>
 
 <svelte:head>
@@ -8,14 +8,18 @@
 </svelte:head>
 
 <section>
-	<h1 class="text-3xl font-bold underline">
+<!-- Todo add pomodoro  -->
+	<main>
+		<Pomodoro />
+	</main>
+	<h1 class="text-3xl font-bold p-10">
 		To-Do List
 	</h1>
 
-	<Counter />
 </section>
 
 <style>
+
 	section {
 		display: flex;
 		flex-direction: column;
