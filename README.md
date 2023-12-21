@@ -1,38 +1,45 @@
-# create-svelte
+# Todo-Pomodoro
+Hi, my name is Fernando
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+I am making a Pomodoro with a Todo List so you can focus in your tasks and know how much do you work spend
+working on them.
 
-## Creating a project
+This application will have two approaches one for a mvp with all the general functions and another with some
+additional resources that you can hire with an unexpensive subscription if you like to support me to
+continue doing these projects outside my everyday work.
 
-If you're seeing this, you've probably already done this step. Congrats!
+Thank you very much and I hope it will help you a lot.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+# Roadmap
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## MVP:
 
-## Developing
+### **To-Do List:**
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- [ ]  Diseño de la interfaz de usuario para la lista de tareas.
+- [ ]  Implementación de la lógica para agregar/eliminar tareas.
+- [ ]  Desarrollo de la capacidad para marcar tareas como completadas.
+- [ ]  Integración de la lista de tareas con el sistema de temporizador Pomodoro.
 
-```bash
-npm run dev
+### **Temporizador Pomodoro:**
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+- [ ]  Creación de la interfaz de usuario para el temporizador.
+- [ ]  Implementación del temporizador (inicio, pausa, reinicio, intervalos).
+- [ ]  Desarrollo de la lógica para pausar automáticamente al completar una tarea.
+- [ ]  Integración con la lista de tareas para iniciar el temporizador desde una tarea seleccionada.
 
-## Building
+## Additional features:
 
-To create a production version of your app:
+### **Spotify:**
 
-```bash
-npm run build
-```
+- [ ]  Investigación y autenticación con la API de Spotify.
+- [ ]  Creación de la interfaz de usuario para interactuar con Spotify (reproducción, controles).
+- [ ]  Implementación de la capacidad para buscar y reproducir música desde Spotify.
+- [ ]  Integración con el temporizador Pomodoro para reproducir música durante las sesiones.
 
-You can preview the production build with `npm run preview`.
+### **Plataforma de Pago:**
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- [ ]  Investigación y selección de la pasarela de pago (Stripe, PayPal, etc.).
+- [ ]  Configuración de la pasarela de pago dentro del backend.
+- [ ]  Desarrollo del modelo de suscripción y funcionalidades premium.
+- [ ]  Integración de la lógica de suscripción con las funcionalidades premium de la aplicación.
