@@ -1,45 +1,45 @@
 # Todo-Pomodoro
-Hi, my name is Fernando
+Hi, my name is Fernando.
 
-I am making a Pomodoro with a Todo List so you can focus in your tasks and know how much do you work spend
-working on them.
+I am creating a Pomodoro with a Todo List so you can focus on your tasks and know how much time you spend working on them.
 
-This application will have two approaches one for a mvp with all the general functions and another with some
-additional resources that you can hire with an unexpensive subscription if you like to support me to
-continue doing these projects outside my everyday work.
+This application will have two versions: one as an MVP with all the general functions, and another with some additional features available through an affordable subscription, should you wish to support me in continuing these projects outside my everyday work.
 
-Thank you very much and I hope it will help you a lot.
+Thank you very much, and I hope it will be of great help to you.
 
-# Roadmap
+## Roadmap
 
-## MVP:
+### MVP:
 
-### **To-Do List:**
+#### **To-Do List:**
 
-- [ ]  Diseño de la interfaz de usuario para la lista de tareas.
-- [ ]  Implementación de la lógica para agregar/eliminar tareas.
-- [ ]  Desarrollo de la capacidad para marcar tareas como completadas.
-- [ ]  Integración de la lista de tareas con el sistema de temporizador Pomodoro.
+- [ ] Design of the user interface for the task list.
+- [ ] Implementation of the logic to add/delete tasks.
+  - [ ] Add difficulty level.
+  - [ ] Add due date.
+- [ ] Development of the ability to mark tasks as completed.
+- [ ] Integration of the task list with the Pomodoro timer system.
 
-### **Temporizador Pomodoro:**
+#### **Pomodoro Timer:**
 
-- [ ]  Creación de la interfaz de usuario para el temporizador.
-- [ ]  Implementación del temporizador (inicio, pausa, reinicio, intervalos).
-- [ ]  Desarrollo de la lógica para pausar automáticamente al completar una tarea.
-- [ ]  Integración con la lista de tareas para iniciar el temporizador desde una tarea seleccionada.
+- [ ] Creation of the user interface for the timer.
+- [ ] Implementation of the timer (start, pause, reset, intervals).
+- [ ] Development of the logic to automatically pause upon completing a task.
+- [ ] Integration with the task list to start the timer from a selected task.
 
-## Additional features:
+### Additional Features:
 
-### **Spotify:**
+#### **Spotify:**
 
-- [ ]  Investigación y autenticación con la API de Spotify.
-- [ ]  Creación de la interfaz de usuario para interactuar con Spotify (reproducción, controles).
-- [ ]  Implementación de la capacidad para buscar y reproducir música desde Spotify.
-- [ ]  Integración con el temporizador Pomodoro para reproducir música durante las sesiones.
+- [ ] Research and authentication with Spotify's API.
+- [ ] Creation of the user interface to interact with Spotify (playback, controls).
+- [ ] Implementation of the ability to search and play music from Spotify.
+- [ ] Integration with the Pomodoro timer to play music during sessions.
 
-### **Plataforma de Pago:**
+#### **Payment Platform:**
 
-- [ ]  Investigación y selección de la pasarela de pago (Stripe, PayPal, etc.).
-- [ ]  Configuración de la pasarela de pago dentro del backend.
-- [ ]  Desarrollo del modelo de suscripción y funcionalidades premium.
-- [ ]  Integración de la lógica de suscripción con las funcionalidades premium de la aplicación.
+- [ ] Research and selection of a payment gateway (Stripe, PayPal, etc.).
+- [ ] Configuration of the payment gateway within the backend.
+- [ ] Development of the subscription model and premium features.
+- [ ] Integration of the subscription logic with the application's premium features.
+
