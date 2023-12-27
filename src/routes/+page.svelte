@@ -1,5 +1,5 @@
 <script>
-	import Pomodoro from './Pomodoro.svelte';
+	import Pomodoro from '../components/Pomodoro.svelte';
 </script>
 
 <svelte:head>

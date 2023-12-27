@@ -11,6 +11,13 @@ Thank you very much, and I hope it will be of great help to you.
 
 ### MVP:
 
+#### **Pomodoro Timer:**
+
+- [x] Creation of the user interface for the timer.
+- [x] Implementation of the timer (start, pause, reset, intervals).
+- [x] Development of the logic to automatically pause upon completing a task.
+- [?] Integration with the task list to start the timer from a selected task.
+
 #### **To-Do List:**
 
 - [ ] Design of the user interface for the task list.
@@ -19,13 +26,6 @@ Thank you very much, and I hope it will be of great help to you.
   - [ ] Add due date.
 - [ ] Development of the ability to mark tasks as completed.
 - [ ] Integration of the task list with the Pomodoro timer system.
-
-#### **Pomodoro Timer:**
-
-- [ ] Creation of the user interface for the timer.
-- [ ] Implementation of the timer (start, pause, reset, intervals).
-- [ ] Development of the logic to automatically pause upon completing a task.
-- [ ] Integration with the task list to start the timer from a selected task.
 
 ### Additional Features:
 

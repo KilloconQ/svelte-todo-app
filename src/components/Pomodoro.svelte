@@ -5,7 +5,11 @@
 	let timeLeft: number = WORK_TIME;
 	let isRunning: boolean = false;
 	let interval: number;
+	let isFreeTime: boolean = false;
 
+	/**
+	 * @description Starts the timer
+	 */
 	function startTimer() {
 		isRunning = true;
 		interval = setInterval(() => {
@@ -13,25 +17,51 @@
 				timeLeft--;
 			} else {
 				clearInterval(interval);
-				isRunning = false;
-				//Change notifier
+				changeTime();
+				//TODO: Change notifier
 			}
 		}, 1000);
 	}
 
+	/**
+	 * @description Stops the timer
+	 */
 	function stopTimer() {
 		clearInterval(interval);
 		isRunning = false;
 	}
 
+	/**
+	 * @description Resets the timer
+	 */
 	function resetTimer() {
-		timeLeft = WORK_TIME;
+		console.log(isFreeTime);
+		timeLeft = isFreeTime ? FREE_TIME : WORK_TIME;
 	}
 
+	/**
+	 * @description Formats a number of seconds into a time string in the format "mm:ss"
+	 * @param {number} seconds - The number of seconds to format
+	 * @returns {string} - The formatted time string
+	 */
 	function formatTime(seconds: number): string {
 		const minutes = Math.floor(seconds / 60);
 		const remainingSeconds = seconds % 60;
 		return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+	}
+
+	/**
+	 * Chnages between work time and free time
+	 */
+	function changeTime(): void {
+		if (!isFreeTime) {
+			isFreeTime = true;
+			timeLeft = FREE_TIME;
+		} else {
+			isRunning = false;
+			timeLeft = WORK_TIME;
+			isFreeTime = false;
+		}
 	}
 </script>
 
