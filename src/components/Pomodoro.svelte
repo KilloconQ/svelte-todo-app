@@ -66,28 +66,40 @@
 </script>
 
 <!-- Timer -->
-<div class="text-5xl font-bold flex justify-center p-10">
-	<div>{formatTime(timeLeft)}</div>
-</div>
+<section>
+	<div class="text-5xl font-bold flex justify-center p-10">
+		<div>{formatTime(timeLeft)}</div>
+	</div>
 
-<!-- Buttons-->
-<div class="flex flex-row space-x-10">
-	<button
-		class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-6 rounded-md transition-colors duration-500 ease-in-out"
-		on:click={startTimer}
-	>
-		Start
-	</button>
-	<button
-		class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-6 rounded-md transition-colors duration-500 ease-in-out"
-		on:click={stopTimer}
-	>
-		Stop
-	</button>
-	<button
-		class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-6 rounded-md transition-colors duration-500 ease-in-out"
-		on:click={resetTimer}
-	>
-		Reset
-	</button>
-</div>
+	<!-- Buttons-->
+	<div class="flex flex-row space-x-10">
+		<button
+			class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-6 rounded-md transition-colors duration-500 ease-in-out"
+			on:click={startTimer}
+		>
+			Start
+		</button>
+		<button
+			class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-6 rounded-md transition-colors duration-500 ease-in-out"
+			on:click={stopTimer}
+		>
+			Stop
+		</button>
+		<button
+			class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-6 rounded-md transition-colors duration-500 ease-in-out"
+			on:click={resetTimer}
+		>
+			Reset
+		</button>
+	</div>
+</section>
+
+<style>
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex: 0.6;
+	}
+</style>

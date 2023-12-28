@@ -1,5 +1,6 @@
 <script>
 	import Pomodoro from '../components/Pomodoro.svelte';
+	import Todo from '../components/Todo.svelte';
 </script>
 
 <svelte:head>
@@ -7,31 +8,18 @@
 	<meta name="description" content="To-Do List" />
 </svelte:head>
 
-<section>
-<!-- Todo add pomodoro  -->
-	<main>
+<main>
+	<article>
 		<Pomodoro />
-	</main>
-	<h1 class="text-3xl font-bold p-10">
-		To-Do List
-	</h1>
-
-</section>
+		<h1 class="text-3xl font-bold p-10">To-Do List</h1>
+		<Todo />
+	</article>
+</main>
 
 <style>
-
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
 	h1 {
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 700;
 		width: 100%;
 	}
-
 </style>
