@@ -1,5 +1,5 @@
 <script lang="ts">
-	const WORK_TIME = 25 * 60;
+	const WORK_TIME = 0.1 * 60;
 	const FREE_TIME = 5 * 60;
 
 	let timeLeft: number = WORK_TIME;
