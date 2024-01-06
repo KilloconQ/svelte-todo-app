@@ -107,3 +107,13 @@ button:focus:not(:focus-visible) {
   width: 1px;
   white-space: nowrap;
 }
+
+.custom-line-through::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-top: 2px solid; /* Ajusta el grosor aquí */
+    opacity: 0.4; /* Ajusta la opacidad si es necesario */
+}
