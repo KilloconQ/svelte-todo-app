@@ -1,5 +1,5 @@
 <script lang="ts">
-	const WORK_TIME = 0.1 * 60;
+	const WORK_TIME = 25 * 60;
 	const FREE_TIME = 5 * 60;
 
 	let timeLeft: number = WORK_TIME;
@@ -35,7 +35,8 @@
 	 * @description Resets the timer
 	 */
 	function resetTimer() {
-		console.log(isFreeTime);
+		clearInterval(interval); // Asegúrate de limpiar el intervalo existente
+		isRunning = false; // Actualiza el estado a no corriendo
 		timeLeft = isFreeTime ? FREE_TIME : WORK_TIME;
 	}
 
@@ -73,18 +74,25 @@
 
 	<!-- Buttons-->
 	<div class="flex flex-row space-x-10">
-		<button
-			class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-6 rounded-md transition-colors duration-500 ease-in-out"
-			on:click={startTimer}
-		>
-			Start
-		</button>
-		<button
-			class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-6 rounded-md transition-colors duration-500 ease-in-out"
-			on:click={stopTimer}
-		>
-			Stop
-		</button>
+		{#if !isRunning}
+			<!-- content here -->
+			<button
+				class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-6 rounded-md transition-colors duration-500 ease-in-out"
+				on:click={startTimer}
+				disabled={isRunning}
+			>
+				Start
+			</button>
+		{/if}
+		{#if isRunning}
+			<button
+				class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-6 rounded-md transition-colors duration-500 ease-in-out"
+				on:click={stopTimer}
+				disabled={!isRunning}
+			>
+				Stop
+			</button>
+		{/if}
 		<button
 			class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-6 rounded-md transition-colors duration-500 ease-in-out"
 			on:click={resetTimer}
