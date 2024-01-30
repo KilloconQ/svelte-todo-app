@@ -33,7 +33,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@supabase/supabase-js": "^2.39.3",
 		"autoprefixer": "^10.4.16",
 		"postcss": "^8.4.33",
 		"svelte-notifications": "^0.9.98",
